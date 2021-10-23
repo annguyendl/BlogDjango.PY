@@ -1,4 +1,7 @@
-# Overview
+# Blog and Google Translate by Django
+Learning Django. Document and source from https://www.udemy.com/course/the-python-mega-course.
+
+## Overview
 
 ```powershell
 python.exe -m venv env
@@ -16,7 +19,6 @@ python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 ```
-User/pass: anadmin/annvt@12345
 
 Access to admin page:
 ```
