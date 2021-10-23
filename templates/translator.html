@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h3>Google Translate in Python using googletrans==4.0.0-rc1 library</h3>
+    <form action="{% url 'trans_home' %}" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-sm-6 mt-3 left">
+                <p>Auto detection language:</p>
+                <textarea class="form-control" rows="3" name="my_textarea">{{original_text}}</textarea>
+            </div>
+            <div class="col-sm-6 mt-3 left">
+                <p>Vietnamese:</p>
+                <textarea class="form-control" rows="3">{{output_text}}</textarea>
+                <input class="btn btn-primary ml-3 mt-3" type="submit" value="Translate">
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}
