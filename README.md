@@ -89,7 +89,7 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blogs/', include('blog.urls')),
+    path('', include('blog.urls')),
 ]
 ```
 
